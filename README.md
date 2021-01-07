@@ -15,8 +15,7 @@ One can directly get the latest terraform binar from " https://releases.hashicor
     $ terraform --version
 
 First of all, download the source code 
-    $ git clone https://github.com/anusinh9/test_scalereal.git
-    $ cd test_scalereal
+    $ git clone https://github.com/anusinh9/awselasticsearch.git
 
 For the sake for simplicty if you are not using AWS CLI, you can use the the access key and secret access key provided by AMAZON as environment variables to prevent it from using hard-coded secrets. Find below examples (these secrets are dummy and wont work in real life)
 
