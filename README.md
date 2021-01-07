@@ -37,25 +37,31 @@ For the sake for simplicty if you are not using AWS CLI, you can use the the acc
 Q1. What did you choose to automate the provisioning and bootstrapping of the instance? Why?
 
 💡 Automation provides and abstraction layer where a well written code can be re-used and re-deployed again and which can avoid the possibilty of human error.
+
 Q2. How did you choose to secure ElasticSearch? Why?
 
 💡 By providing
 1- node-2-node encryption
 2 - encryption for data at rest (not bundled with AWS free tier)
+
 Q3. How would you monitor this instance? What metrics would you monitor?
 
 💡 By Providing Cloudwatch log groups and setting up different alarms based on cloudwatch
+
 Q4. Could you extend your solution to launch a secure cluster of ElasticSearch nodes? What
 would need to change to support this use case?
 
 💡 Indeed We can use fine -grained access control to restrict the access further for the cluster setup and also we can setup master nodes which are handy when it comes to manage cluster in a more secure manner.
+
 Q5. Could you extend your solution to replace a running ElasticSearch instance with little or no
 downtime? How?
 
 💡 Yes Indeed we can used the "snapshot_options" where we can store snaphots depending upon hours and when required we can bring up cluster using snapshot in no time.
+
 Q6. Was it a priority to make your code well structured, extensible, and reusable?
 
 💡 Yes indeed using  IAC we are making sure code is re-usable and extensible as our priority.
+
 Q7. What sacrifices did you make due to time?
 
 💡 Not much I had to balance my professional commitments, it took around 1 day of some study and 1 day for implementation and testing.
